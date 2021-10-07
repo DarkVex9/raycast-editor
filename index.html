@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body style="background: #aaaaaa;">
+    <div id="app"></div>
+    <canvas
+      id="canvas1"
+      width="400"
+      height="400"
+      style="border-style: solid; border-width: 1px;"
+    ></canvas>
+    <img src="./textures.png" alt="textures-alt" id="textures" style="flex-grow: 1;" />
+    <div>
+      <canvas
+      id="canvas2"
+      width="576"
+      height="128"
+      style="border-style: solid; border-width: 1px;"
+    ></canvas>
+    <div id="tileData"></div>
+    </div>
+    <script src="src/index.js"></script>
+    <div>
+    <textarea id="newWidth" cols="6" rows="1" placeholder="width"></textarea>
+    <textarea id="newHeight" cols="6" rows="1" placeholder="height"></textarea>
+    </div>
+    <textarea id="textbox" cols="80" rows="4" placeholder="Input or output map data"></textarea>
+    <div>
+      <a href="https://ueij4.csb.app/">Game Engine</a>
+      <p>&nbsp</p>
+      <p>«««««« Controls »»»»»»</p>
+      <p>wasd -- move the cursor</p>
+      <p>Arrows / ijkl -- move the camera</p>
+      <p>Page Up / u -- zoom in</p>
+      <p>Page Down / o -- zoom out</p>
+      <p>click on texture sheet -- set the default palette slot to that texture
+      <p>space / 0 -- paint the cell under the cursor with the default palette slot </p>
+      <p>1-9 -- paint the cell under the cursor with the numbered palette slot</p>
+      <p>f -- toggle palette set mode</p>
+      <p>g -- toggle North South palette set mode</p>
+      <p>h -- toggle East West palette set mode</p>
+      <p>1-9 pallette set mode -- change the numbered palette slot to match the default slot</p>
+      <p>p -- print the map data to the textbox</p>
+      <p>[ -- open the map data from the textbox, if no data is entered it will create a blank map with specified dimensions</p>
+      <p>m -- mirror the default pallette on the EW sides</p>
+      <p>n -- mirror the defualt pallette on the NS sides</p>
+      <p>t -- toggle weather a texture is partially see through, currently broken in the engine</p>
+      <p>&nbsp</p>
+      <p>«««««« Other Notes »»»»»»</p>
+      <p>Textures are oriented relative to the world, not a cell.</p>
+      <p>This means that if from the north a detail is on the right, from the south it will be on the left.</p>
+      <p>
+        In the top down map, cells with multiple textures are shown with the NS
+        texture on the left and the EW texture on the right.
+      </p>
+      <p>
+        There is support for portals in the engine but they are not yet supported by the map
+        editor.
+      </p>
+      <p>Portals are defined with the portalNS and portalEW cell properties, each of which should be an object with the destination x and y if declared. Example: {portalNS:{x:2,y:2},portalEW:{x:7,y:2}}</p>
+      </div>
+  </body></p>
+</p></html>
+</p>

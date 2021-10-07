@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!--<script src="src/index.js"></script>-->
+    <div id="images" style="font-size: 0px;">
+      <div>
+        <img src="./textures/castle/stone_wall.png" style="margin: 0; width: 64; height: 64;" />
+        <img src="./textures/castle/stone_wall_dark.png" style="margin: 0; width: 64; height: 64;" />
+        <img src="./textures/castle/stone_wall_edge.png" style="margin: 0; width: 64; height: 64;" />
+        <img src="./textures/castle/stone_wall_dark_broken.png" style="margin: 0; width: 64; height: 64;" />
+      </div>
+      <div>
+        <img src="./textures/castle/stone_wall.png" style="margin: 0; width: 64; height: 64;" />
+        <img src="./textures/castle/stone_wall_dark.png" style="margin: 0; width: 64; height: 64;" />
+        <img src="./textures/castle/stone_wall_edge.png" style="margin: 0; width: 64; height: 64;" />
+        <img src="./textures/castle/stone_wall_dark.png" style="margin: 0; width: 64; height: 64;" />
+      </div>
+    </div>
+  </body>
+</html>
